@@ -1,0 +1,101 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Page
+    ------------------------------------------- **/
+* {
+    &,
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    background: #333 url("../images/bg-js.jpg") center no-repeat;
+    background-size: cover;
+    font: 16px/1.5 'Open Sans', sans-serif;
+}
+
+.page-wrap {
+    position: relative;
+    @include dims(100%);
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.main {
+    @include center();
+    color: #fff;
+    text-align: center;
+
+    @media screen and (max-width: 1024px) {
+        width: 90%;
+    }
+}
+
+.logo {
+    img {
+        max-width: 150px;
+    }
+}
+
+%animate {
+    position: relative;
+    top: 10px;
+    opacity: 0;
+    @include animation(loading 1s ease  0.3s forwards);
+}
+
+.slogan {
+    @extend %animate;
+    @include font-size(40px);
+
+    @include mobile-portrait {
+        @include font-size(24px);
+    }
+}
+
+.social {
+    @extend %animate;
+    @include font-size(18px);
+
+    &-link {
+        @include transition(all ease .4s);
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        @include dims(32px);
+        padding-top: 4px;
+        border: 3px solid;
+        border-radius: 50%;
+        margin: 10px;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            opacity: .6;
+        }
+    }
+
+    [class*="icon-"]{
+        position: absolute;
+        left: 0;
+        width: 26px;
+    }
+
+    .icon-github {
+        top: -3px;
+        left: -3px;
+        @include font-size(31px);
+    }
+}
+
+@include keyframes(loading) {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}

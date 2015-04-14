@@ -1,0 +1,42 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Icons
+    ------------------------------------------- **/
+@include font-icon('jsninjas', 'jsninjas');
+
+.icon-facebook:before {
+    content: "\f09a";
+}
+
+.icon-facebook-f:before {
+    content: "\f09a";
+}
+
+.icon-twitter:before {
+    content: "\f099";
+}
+
+.icon-google:before {
+    content: "\f1a0";
+}
+
+.icon-linkedin:before {
+    content: "\f0e1";
+}
+
+.icon-tumblr:before {
+    content: "\f173";
+}
+
+.icon-codepen:before {
+    content: "\f1cb";
+}
+
+.icon-at:before {
+    content: "\f1fa";
+}
+
+.icon-github:before {
+    content: "\eab4";
+}

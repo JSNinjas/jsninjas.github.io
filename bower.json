@@ -1,0 +1,25 @@
+{
+  "name": "jsninjas",
+  "version": "0.1.0",
+  "homepage": "https://github.com/JSNinjas/jsninjas.org",
+  "authors": [
+    "Bilal Çınarlı <bcinarli@gmail.com>",
+    "Nesrin Kalender <kalendernesrin@gmail.com>"
+  ],
+  "description": "JS Ninjas Website",
+  "main": "index.html",
+  "keywords": [
+    "JavaScript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "caffeine": "~0.4.1"
+  }
+}
